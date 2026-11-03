@@ -45,3 +45,28 @@ discounted_price = purchase * (1 - discount)
 print(f"Tier: {customer1['tier']}")
 print(f"Discount rate: {discount * 100}%")
 print(f"Final price: {discounted_price}")
+
+#Exercise 6: List of Dicts
+dict1 = {
+    "name": "Jeff", 
+    "tier": "platinum"
+    }
+dict2 = {
+    "name": "Sally",
+    "tier": "gold"
+    }
+dict3 = {
+    "name": "Bob",
+    "tier": "silver"
+    }
+
+customers = [dict1, dict2, dict3]
+for customer in customers:
+    print(f"{customer['name']} is a {customer['tier']} member and receives a {tier_discounts[customer['tier']]*100}% discount.")
+
+#Exercise 7: Nested Catalog
+catalog = {"Widget A": {"price": 9.99, "stock": 150}, 
+           "Gadget C": {"price": 49.99, "stock": 8}}
+for item, details in catalog.items():
+    if details["stock"] < 20:
+        print(f"{item}: LOW STOCK")
