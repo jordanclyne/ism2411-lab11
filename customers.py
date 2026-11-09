@@ -1,3 +1,11 @@
+#1. I would use .get() in real work when I am uncertain if the value I'm searching for exists because 
+# I can provide a default value and avoid errors. I would use the bracket notation when I am certain 
+# that the value exists and I want to access it directly. The rule of thumb is my certainty on whether
+# or not the value exists.
+#2. The pattern in Exercise 8 reminds me of the Excel pattern of using a table to summarize data.
+# The Python version is more useful than the Excel version because it doesn't require manual updating.
+
+
 #Exercise 1: One Customer
 customer1 = {
     "name": "John Doe",
