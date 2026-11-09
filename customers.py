@@ -70,3 +70,20 @@ catalog = {"Widget A": {"price": 9.99, "stock": 150},
 for item, details in catalog.items():
     if details["stock"] < 20:
         print(f"{item}: LOW STOCK")
+
+#Exercise 8: Sales by Region
+sales_by_region = [
+    {"region": "North", "amount": 100},
+    {"region": "South", "amount": 150},
+    {"region": "East", "amount": 200},
+    {"region": "West", "amount": 250},
+    {"region": "North", "amount": 300},
+    {"region": "South", "amount": 400},
+]
+summary = {}
+for sale in sales_by_region:
+    region = sale["region"]
+    summary[region] = summary.get(region, 0) + sale["amount"]
+
+for region in summary:
+    print(f"{region}: ${summary[region]}")
